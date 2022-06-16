@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root{
-    --title-color:#101828;
     --text-color:#667085;
     --main-color: #8e2424;
+    --gray: #EAECF0;
+    --title-color: #101828;
 }
 * {
     margin: 0;
@@ -73,9 +74,9 @@ section#cabecalho{
     display: flex;
     flex-direction:column;
     align-items: center;
-    justify-content:space-around;
-    padding: 96px 0;
+    justify-content:space-evenly;
     height: 400px;
+    padding-top:5rem;
 }
 
 section#cabecalho span{
@@ -87,16 +88,16 @@ section#cabecalho span{
 
 section#cabecalho h1{
     font-weight: 600;
-    font-size: 3.2rem;
-    letter-spacing: 0.02rem;
-    color: var(--title-color);
+    font-size: 2.8rem;
+    letter-spacing: 0.02em;
+    margin-top: -1rem;
 }
 
 section#cabecalho p{
     color: var(--text-color);
     font-weight: 400;
     text-align: center;
-    font-size:1.2rem;
+    font-size:1.2em;
     width: 791px;
 }
 
@@ -110,8 +111,6 @@ section#metricas{
     width: 280px;
     display: flex;
     flex-direction: column;
-    height: 200px;
-
 }
 
 .numeros{
@@ -128,4 +127,91 @@ section#metricas{
 .textos{
     color: var(--text-color);
     padding-top: 10px;
+}
+
+#vagas{
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+#container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#span {
+    width: 125px;
+    height: 28px;
+    border-radius: 20px;  
+    background-color: #8e242418;  
+    text-align: center;
+    padding: 3px;
+}
+
+#vagas span {
+    color:var(--main-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+#vagas h3{
+    color: var(--title-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 20px 0 20px 0 ;
+}
+
+#vagas p{
+    color: var(--text-color);
+    font-weight: 400;
+    margin-bottom: 64px;
+}
+#vagas img{
+    margin-bottom: 64px;
+}
+
+.container2{    
+    display: flex;
+    flex-direction: column;
+}
+.categoria-vagas{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--title-color);
+    margin: 0 0 0 18.5rem;
+
+}
+.vagas{
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: var(--gray);
+    margin: 10px;
+    padding: 10px;
+    width: 768px;
+    height: 136px;
+    margin: 24px auto;
+    padding: 24px
+    
+}
+
+.desc-vaga{
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    display: flex;
+    justify-content: start;
+}
+.desc-vaga span{
+    margin: 32px 24px 0 0;
+}
+
+.titulo-vaga{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--title-color);
 }
